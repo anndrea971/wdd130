@@ -45,9 +45,12 @@ section {
     font-size: .9rem;
 }
 
-section p (
+section p {
+    margin: 10px;
+}
 
-)
+
 footer {
+    font-size: .9rem;
 
 }
