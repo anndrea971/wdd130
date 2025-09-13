@@ -6,59 +6,19 @@
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
-/* NAV */
-nav {
-    background-color: steelblue;
-    padding: 10px;
+
+header {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
 }
 
-nav a {
-    color:white;
-    padding: 10px;
-    display: block;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* H1 */
-h1, h2 {
-   font-family: var(--heading-font);
-    color:var(--primary-color);
-}
-
-main {
-  max-width: 840px;
-}
-    
-/*Main Img */
-main img {
-    width: 150px;
-    height: auto;
-    border: 1px solid steelblue;
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
-}
-
-/* Parragraph */
-p { padding: 0;}
-
-/* aside */
-aside {
-    width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgba(0, 0, 0, 0.2); 
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
-    text-align: center;
-}
-
-aside img {
-    width: 200px;
-    height: auto;
-}
-
-/* Footer */
-footer {
-    margin-top: 1rem;
-    border-top: 1px solid #000;
-    text-align: center;
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
 }
