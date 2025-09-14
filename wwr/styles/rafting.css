@@ -76,6 +76,9 @@ h1 {
 .hero article {
     position: absolute;
     text-align: center;
+    top: 55%;
+    left:50%;
+    transform: translate(-50%,-50%);
     opacity: 0,7;
     background-color: var(--accent2-color);
     padding: 25px;
