@@ -86,6 +86,7 @@ h1 {
     line-height: 1.4;
     margin-top:40px;
     box-sizing: border-box;
+    transform: translatex(-50%);
 }
 
     .hero article img {
