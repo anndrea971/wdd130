@@ -45,6 +45,13 @@ nav, p, section, article {
     margin: 0 10px;
 }
 
+.socialmedia img {
+    text-decoration: none;
+    width: 16px;
+    height: auto;
+    display: inline-block;
+}
+
 .hero {
     position: relative;
 }
