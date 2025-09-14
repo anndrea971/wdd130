@@ -76,10 +76,11 @@ h1 {
 .hero article {
     position: absolute;
     bottom: 20px;
+    left: 20px;
     right: 20px;
     background-color: rgba(244, 162, 97, 0.9);
     padding: 1rem;
-    max-width: 400px;
+    max-width: none;
     color: #000;
     font-size: 0.9rem;
     line-height: 1.4;
