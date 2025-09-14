@@ -78,9 +78,15 @@ h1 {
     bottom: 20px;
     right: 20px;
     background-color: rgba(244, 162, 97, 0.9);
+    padding: 1rem
+    max-width: 400px;
+    color: #000;
+    font-size: 0.9rem;
+    line-height: 1.4;
 }
 
     .hero article img {
         float: right;
-        width: 125px;
+        width: 100px;
+        margin-left: 1rem;
     }
