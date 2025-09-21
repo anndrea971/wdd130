@@ -25,58 +25,79 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <div class="hero">
-            <img src="images/hero.jpg" alt="Rafting Adventure" class="hero-image">
-            <h1>White Water Rafting</h1>
-            <article>
-                <img src="images/happy-client.jpg" alt="Happy client enjoying a rafting trip" class="article-image">
-                <p>Whitewater rafting is a type of recreation that involves navigating a non-motorized watercraft down
-                    free flowing rivers.</p>
-            </article>
-        </div>
-        <section class="history">
-            <h2>History</h2>
-            <div class="history-content">
-                <p>Andrea’s River Rafting was founded with one clear mission: to share the excitement and beauty of our
-                    rivers with people
-                    from all walks of life. What started as a small family initiative has grown into one of the most
-                    trusted rafting
-                    companies in the region, known for safety, professionalism, and unforgettable adventures.</p>
-                <img src="images/rafting-history.jpg" alt="People Rafting" class="history-image">
-                <p>Over the years, we have guided thousands of adventurers through rapids, calm waters, and breathtaking
-                    landscapes. Our
-                    experienced guides are passionate about nature and adventure, making sure every trip is not only fun
-                    but also
-                    educational and safe. At Andrea’s River Rafting, every journey down the river is more than just an
-                    activity—it’s a
-                    memory that lasts a lifetime.</p>
+    <main class="contact-page">
+        <section class="contact-info">
+            <div class="company-details">
+                <h1>White Water Rafting</h1>
+                <p>123 Main River street.</p>
+                <p>Kolob, California.</p>
+                <p>+1 999 999 9999</p>
+                <p><a href="mailto:info@whitewater.com">info@whitewater.com</a></p>
+            </div>
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15443.235544485573!2d-113.06013695!3d37.19901045!2m3!1f0!2f0!3f0!3m2!1f0!2f0!4m8!3m6!1s0x80b5b159f81f181f%3A0x6b864a9190c1f6c4!2sKolob%2C%20UT%2084738!3b1!4m2!3d37.19901045!4d-113.06013695!5e0!3m2!1sen!2sus!4v1678229891820!5m2!1sen!2sus"
+                    width="600" height="450" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
-        <section class="adventures">
-            <h2>Adventure Awaits You</h2>
-            <div class="adventure-images">
+
+        <section class="employee-profiles">
+            <h2>We Are Here to Serve You</h2>
+            <div class="profiles-container">
                 <figure>
-                    <img src="images/adventure-1.jpg" alt="Adventure 1">
-                    <figcaption>Futaleufus River</figcaption>
+                    <img src="images/employee-1.jpg" alt="Employee 1 Profile">
+                    <figcaption>CEO - Sarah Johnson</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/adventure-2.jpg" alt="Adventure 2">
-                    <figcaption>Trancuras River</figcaption>
+                    <img src="images/employee-2.jpg" alt="Employee 2 Profile">
+                    <figcaption>Lead Guide - Mark Lee</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/adventure-3.jpg" alt="Adventure 3">
-                    <figcaption>Bakers River</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/adventure-4.jpg" alt="Adventure 4">
-                    <figcaption>Petrohue Rivers</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/adventure-5.jpg" alt="Adventure 5">
-                    <figcaption>Tenos River</figcaption>
+                    <img src="images/employee-3.jpg" alt="Employee 3 Profile">
+                    <figcaption>Reservations Manager - Emily Carter</figcaption>
                 </figure>
             </div>
+        </section>
+
+        <section class="contact-form-section">
+            <form action="#" method="post" class="contact-form">
+                <h2>Contact Us</h2>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="user_name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="user_email" required>
+                </div>
+                <fieldset class="form-group">
+                    <legend>Message Purpose:</legend>
+                    <div class="radio-options">
+                        <div>
+                            <input type="radio" id="general" name="message_purpose" value="general" required>
+                            <label for="general">General Inquiry</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="reservation" name="message_purpose" value="reservation">
+                            <label for="reservation">Reservation Question</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="website" name="message_purpose" value="website">
+                            <label for="website">Website Suggestion</label>
+                        </div>
+                    </div>
+                </fieldset>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="user_message" rows="5" required></textarea>
+                </div>
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="newsletter" name="newsletter_subscribe">
+                    <label for="newsletter">Please Subscribe me to the monthly newsletter</label>
+                </div>
+                <button type="submit">Get In Touch!</button>
+            </form>
         </section>
     </main>
     <footer>
