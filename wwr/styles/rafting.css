@@ -235,7 +235,7 @@ footer p {
     display: block;
     margin-bottom: 0.5rem;
     font-weight: bold;
-    color: var(--dark-text-color);
+    color: #fff;
 }
 
 .form-group input[type="text"],
@@ -262,7 +262,7 @@ footer p {
 .checkbox-group label {
     display: inline;
     font-weight: normal;
-    color: var(--dark-text-color);
+    color: #fff;
     margin-left: 0.5rem;
 }
 
