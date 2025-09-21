@@ -172,6 +172,66 @@ footer p {
     filter: invert(100%);
 }
 
+/* --- HOME PAGE STYLES --- */
+.newsletter {
+    text-align: center;
+    padding: 2rem;
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.newsletter input {
+    padding: 0.5rem;
+    width: 300px;
+}
+
+.newsletter button {
+    padding: 0.75rem 1.5rem;
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.trips {
+    text-align: center;
+    padding: 2rem;
+}
+
+.trip-cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.trip-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 250px;
+    border: 1px solid var(--accent2-color);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.trip-card img {
+    width: 100%;
+    height: 200px; /* Set a fixed height for all trip card images */
+    object-fit: cover; /* This is the key to making them look uniform */
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+
 /* CONTACT PAGE STYLES */
 
 .contact-page {
@@ -206,6 +266,71 @@ footer p {
 .company-details a {
     color: var(--primary-color);
     text-decoration: none;
+}
+/* --- TRIPS PAGE STYLES --- */
+
+.trip-options {
+    padding: 2rem;
+}
+
+.trip-details-card {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    border: 1px solid var(--accent2-color);
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.trip-details-card.reverse-layout {
+    flex-direction: row-reverse;
+}
+
+.trip-details-card img {
+    width: 400px; /* Set a fixed width */
+    height: 250px; /* Set a fixed height */
+    object-fit: cover; /* This makes the images uniform */
+    border-radius: 4px;
+}
+
+.trip-info {
+    flex-grow: 1;
+}
+
+.trip-info ul {
+    list-style-type: none;
+    margin: 1rem 0;
+}
+
+.trip-info li {
+    margin-bottom: 0.5rem;
+}
+
+.trips-table-section {
+    padding: 2rem;
+    text-align: center;
+}
+
+.trips-table-section table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.trips-table-section th, .trips-table-section td {
+    border: 1px solid var(--accent1-color);
+    padding: 10px;
+    text-align: left;
+}
+
+.trips-table-section thead {
+    background-color: var(--accent2-color);
+    color: var(--accent1-color);
+}
+
+.trips-table-section tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
 }
 
 .contact-form-section {
