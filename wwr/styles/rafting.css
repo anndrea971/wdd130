@@ -336,10 +336,15 @@ footer p {
 
 .contact-form-section {
     grid-column: 2 / 3;
-    background-color: rgba(233, 196, 106, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid var(--accent2-color);
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #e9c46a;
+
 }
 
 .contact-form {
