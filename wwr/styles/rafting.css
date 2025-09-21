@@ -243,9 +243,11 @@ footer p {
 .form-group textarea {
     width: 100%;
     padding: 0.75rem;
-    border: 1px solid var(--dark-text-color);
+    border: 1px solid #fff;
+    background-color: #fff
     border-radius: 4px;
     box-sizing: border-box;
+    color: black;
 }
 
 .form-group textarea {
