@@ -239,6 +239,7 @@ footer p {
     grid-template-columns: 1fr 1fr;
     grid-gap: 2rem;
     padding: 2rem;
+    color: black
 }
 
 .contact-info {
