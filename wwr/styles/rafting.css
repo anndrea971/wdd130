@@ -360,7 +360,7 @@ footer p {
     display: block;
     margin-bottom: 0.5rem;
     font-weight: bold;
-    color: white;
+    color: black;
 }
 
 .form-group input[type="text"],
@@ -389,7 +389,7 @@ footer p {
 .checkbox-group label {
     display: inline;
     font-weight: normal;
-    color: #fff;
+    color: white;
     margin-left: 0.5rem;
 }
 
