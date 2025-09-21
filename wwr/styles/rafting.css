@@ -7,11 +7,6 @@
     --body-font: Arial, Helvetica, sans-serif;
 }
 
-header {
-    background-color: var(--primary-color);
-    color: var(--accent2-color);
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -33,63 +28,146 @@ h1, h2 {
     color: var(--primary-color);
 }
 
-nav, p, section, article {
-    margin: 16px;
-    padding: 8px;
+/* Header Grid */
+header {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    padding: 1rem;
 }
 
-.socialmedia a {
+.logo img {
+    width: 80px;
+}
+
+/* Nav Flexbox */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: var(--accent2-color);
     text-decoration: none;
-    width: 16px;
-    height: auto;
-    margin: 0 10px;
+    font-size: 1.2rem;
 }
 
-.socialmedia img {
-    text-decoration: none;
-    width: 40px;
-    height: auto;
-    display: inline-block;
-}
-
+/* Hero Section */
 .hero {
     position: relative;
 }
 
-.hero img{
+.hero img {
     display: block;
     width: 100%;
     height: auto;
 }
 
-h1 {
+.hero h1 {
     position: absolute;
     top: 20px;
     width: 100%;
-    padding: 16px;
     text-align: center;
-    opacity: 0.7;
-    background-color: var(--accent1-color);
-    color: #fff; /* white text */
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
 }
 
 .hero article {
     position: absolute;
-    top: 50%;
+    bottom: 20px;
     left: 50%;
-    transform: translate(-50%, -50%); /* Esta línea centra el recuadro */
-    text-align: left; /* Es mejor que el texto esté alineado a la izquierda */
-    opacity: 0.7;
-    background-color: var(--accent2-color);
-    padding: 16px;
-    width: 100%;
-    max-width: 600px;
-    color: #000;
-    line-height: 1.4;
-    box-sizing: border-box;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    max-width: 80%;
+    text-align: center;
 }
 
-    .hero article img {
-        float: right;
-        width: 150px;
-    }
+.hero article img {
+    float: right;
+    width: 150px;
+    margin-left: 10px;
+}
+
+/* History Section Grid */
+.history {
+    text-align: center;
+    padding: 20px;
+}
+
+.history h2 {
+    margin-bottom: 20px;
+}
+
+.history-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.history-content img {
+    width: 100%;
+    height: auto;
+}
+
+/* Adventures Section Flexbox */
+.adventures {
+    text-align: center;
+    padding: 20px;
+}
+
+.adventure-images {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.adventure-images figure {
+    width: calc(20% - 10px);
+    text-align: center;
+}
+
+.adventure-images img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+figcaption {
+    margin-top: 5px;
+    font-size: 0.9rem;
+    font-style: italic;
+    color: var(--primary-color);
+}
+
+/* Footer Flexbox */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+
+footer p {
+    margin: 0;
+    flex-grow: 1;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 10px;
+}
+
+.socialmedia img {
+    width: 24px;
+    height: 24px;
+    filter: invert(100%);
+}
