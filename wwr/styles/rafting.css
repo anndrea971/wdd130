@@ -426,7 +426,6 @@ button[type="submit"] {
     border-radius: 4px;
     font-size: 1.2rem;
     cursor: pointer;
-    align-self: flex-start;
 }
 
 button[type="submit"]:hover {
